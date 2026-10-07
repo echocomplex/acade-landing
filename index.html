@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Аcade — порядок в уроках вместо хаоса в пяти приложениях</title>
+  <meta name="description" content="Аcade собирает расписание, домашки, напоминания и оплаты репетитора в одно окно: свой бренд, банк заданий ЕГЭ, авто-напоминания и чеки. Бесплатный тариф." />
+  <meta name="theme-color" content="#141a24" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Аcade — одно окно вместо пяти приложений" />
+  <meta property="og:description" content="Расписание со ссылками, домашки под заданиями, автонапоминания и оплаты — в одном месте. Платформа для репетиторов." />
+  <meta property="og:site_name" content="Аcade" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    window.YM_COUNTER_ID = 113534810;
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113534810', 'ym');
+
+
+    ym(113534810, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/113534810" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><path d="M12 2l2.2 2.2 3-.3.3 3L20 9l-2.2 2.2.3 3-3 .3L12 17l-2.2-2.2-3 .3-.3-3L4 9l2.2-2.2-.3-3 3 .3z"/><path d="M9 9l2 2 4-4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></symbol>
+    <symbol id="i-wand" viewBox="0 0 24 24"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M17.8 6.2 19 5"/><path d="M3 21l9-9"/><path d="M12.2 6.2 11 5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Аcade — на главную">
+        <span class="logo-mark" aria-hidden="true">A</span>
+        <span class="logo-text">Аcade<span class="logo-sub">Платформа</span></span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+        <a href="#order">Порядок</a>
+        <a href="#features">Возможности</a>
+        <a href="#analytics">Статистика</a>
+        <a href="#pricing">Тарифы</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm" href="#cta">Начать бесплатно</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-calendar"/></svg> Анти-хаос для репетиторов</span>
+          <h1>Одно окно вместо <span class="accent">пяти приложений</span></h1>
+          <p class="lead">
+            Расписание, где к каждому уроку привязана ссылка на любой сервис, домашки под конкретными заданиями,
+            автонапоминания и оплаты — в одном месте. Аcade наводит порядок
+            и ведёт рутину за вас, чтобы вы просто преподавали.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#cta">Начать бесплатно <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost btn-lg" href="#order">Как это устроено</a>
+          </div>
+
+          <ul class="hero-trust">
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Напоминания за 24 ч и за час</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Домашки не теряются в переписке</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Помощь с переносом с других платформ</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="browser">
+            <div class="browser-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="browser-url"><svg class="icon icon-sm"><use href="#i-globe"/></svg> petrov.acade-platform.ru</span>
+            </div>
+            <div class="browser-body">
+              <div class="mock-side">
+                <span class="mock-logo">И.&nbsp;Петров</span>
+                <span class="mock-nav active"></span>
+                <span class="mock-nav"></span>
+                <span class="mock-nav"></span>
+                <span class="mock-nav"></span>
+              </div>
+              <div class="mock-main">
+                <div class="mock-topbar">
+                  <span class="mock-title">Расписание · сегодня</span>
+                  <span class="mock-chip">3 урока</span>
+                </div>
+                <div class="mock-list">
+                  <div class="mock-lesson">
+                    <span class="mock-time">16:00</span>
+                    <div class="mock-who"><b>Мария К.</b><span>Домашка прикреплена</span></div>
+                    <span class="mock-link">Ссылка</span>
+                  </div>
+                  <div class="mock-lesson">
+                    <span class="mock-time">17:30</span>
+                    <div class="mock-who"><b>Артём П.</b><span>Напоминание отправлено</span></div>
+                    <span class="mock-link">Ссылка</span>
+                  </div>
+                  <div class="mock-lesson">
+                    <span class="mock-time">19:00</span>
+                    <div class="mock-who"><b>София Р.</b><span>Оплата подтверждена</span></div>
+                    <span class="mock-link">Ссылка</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            <div><b>Напоминание отправлено</b><span>ученику — за 24 часа до урока</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMS -->
+    <section class="section section-muted" id="problems">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Знакомая рутина?</span>
+          <h2>Ваши уроки живут в пяти приложениях</h2>
+          <p class="section-sub">Расписание, ссылки, домашки, напоминания и оплаты разбросаны по календарям, чатам и блокнотам — и всё держится на вашей памяти.</p>
+        </div>
+        <div class="cards-3">
+          <article class="card pain">
+            <h3>Расписание — в календаре</h3>
+            <p>Ссылки на уроки лежат в заметках, и каждый раз приходится вспоминать, какая из них для какого ученика.</p>
+          </article>
+          <article class="card pain">
+            <h3>Домашки тонут в переписке</h3>
+            <p>Задания и разборы разбросаны по чатам. Ученики не находят их, а вы повторяете одно и то же по десять раз.</p>
+          </article>
+          <article class="card pain">
+            <h3>Напоминания — в голове</h3>
+            <p>Держите в памяти, кому когда звонить и кто что должен. Один забытый урок — и ученик пропал.</p>
+          </article>
+          <article class="card pain">
+            <h3>Учёта оплат нет</h3>
+            <p>Постоплата и предоплата, скриншоты, чеки и налог — всё вручную, и всё вечно путается.</p>
+          </article>
+          <article class="card pain">
+            <h3>Пять вкладок на один урок</h3>
+            <p>Видеозвонки, мессенджер, документы и таблицы не связаны между собой. Половина времени уходит на переключение.</p>
+          </article>
+          <article class="card pain">
+            <h3>Общей картины нет</h3>
+            <p>Непонятно, кто оплатил, у кого домашка и что на следующем уроке — всё собирается в голове по кусочкам.</p>
+          </article>
+        </div>
+        <p class="turn">Аcade собирает всё это в одно окно — и ведёт за вас.</p>
+      </div>
+    </section>
+
+    <!-- ORDER (ANTI-CHAOS) -->
+    <section class="section section-muted" id="order">
+      <div class="container split">
+        <div class="split-copy">
+          <span class="kicker">Анти-хаос</span>
+          <h2>Одно окно вместо пяти приложений</h2>
+          <p>Перестаньте быть диспетчером между календарём, чатами и таблицами. Аcade собирает расписание, домашки, напоминания и оплаты в одном месте — и ведёт их за вас.</p>
+          <ul class="check-list">
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Расписание: к каждому уроку привязана ссылка на любой сервис</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Домашки и разборы — под конкретными заданиями, а не в переписке</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Автонапоминания ученику — за 24 часа и за час до урока</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Оплаты: напоминания, скриншот, авто-чек и «Мой налог»</li>
+          </ul>
+        </div>
+        <div class="split-visual">
+          <div class="chaos-merge">
+            <div class="chaos-col before">
+              <span class="chaos-label">Раньше — пять приложений</span>
+              <ul>
+                <li>Календарь — расписание</li>
+                <li>Заметки — ссылки на уроки</li>
+                <li>Мессенджер — домашки и разборы</li>
+                <li>Таблицы — учёт оплат</li>
+                <li>Голова — все напоминания</li>
+              </ul>
+            </div>
+            <div class="chaos-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
+            <div class="chaos-col after">
+              <span class="chaos-label">Теперь — одно окно</span>
+              <ul>
+                <li>Расписание со ссылками</li>
+                <li>Домашки под заданиями</li>
+                <li>Автонапоминания ученикам</li>
+                <li>Оплаты, чеки и налог</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS (временно скрыто)
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Как навести порядок</span>
+          <h2>От хаоса к порядку — за один день</h2>
+        </div>
+        <ol class="steps">
+          <li><span class="step-num">1</span><h3>Регистрация</h3><p>Создаёте аккаунт и выбираете тариф. Бесплатный «Старт» доступен сразу.</p></li>
+          <li><span class="step-num">2</span><h3>Перенос</h3><p>Поможем перенести учеников и материалы с другой платформы.</p></li>
+          <li><span class="step-num">3</span><h3>Наполнение</h3><p>Загружаем учеников, расписание и материалы. Помогаем с переездом с других платформ.</p></li>
+          <li><span class="step-num">4</span><h3>Работа</h3><p>Вы ведёте уроки, а платформа сама напоминает, проверяет, считает и напоминает об оплате.</p></li>
+        </ol>
+      </div>
+    </section>
+    -->
+
+    <!-- FEATURES -->
+    <section class="section section-muted" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Возможности</span>
+          <h2>Всё для частного репетитора — в одном месте</h2>
+          <p class="section-sub">Не «ещё одна платформа», а готовая система, которая наводит порядок в уроках и экономит ваше время.</p>
+        </div>
+        <div class="cards-3">
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></div>
+            <h3>Расписание со ссылками</h3>
+            <p>К каждому уроку привязана ссылка — Zoom, Meet или любой другой сервис, — а домашки и разборы лежат строго под конкретными заданиями.</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></div>
+            <h3>Умные напоминания</h3>
+            <p>Ученикам автоматически приходят уведомления о домашках и об уроках — за 24 часа и за час до начала. Прогулов становится меньше.</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg></div>
+            <h3>Оплаты под контролем</h3>
+            <p>Напоминания с учётом пост- и предоплаты. Ученик прикрепляет скриншот, вы отмечаете «оплатил» — чек уходит автоматически, всё видно в «Мой налог».</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></div>
+            <h3>Встроенный банк заданий ЕГЭ</h3>
+            <p>Актуальные задачи по математике, информатике, русскому, английскому и другим предметам. Не нужно тратить ночи на перенос контента.</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></div>
+            <h3>Статистика для родителей</h3>
+            <p>Понятные графики роста баллов и счётчики решённых задач. Показываете родителям на пробном уроке — и цену проще обосновать.</p>
+          </article>
+          <!-- White Label (скрыто)
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div>
+            <h3>White Label и поддомен</h3>
+            <p>Личный сайт на поддомене вида <b>petrov.acade-platform.ru</b>. Ваше фото, логотип и цвета. Никаких упоминаний стороннего софта.</p>
+          </article>
+          -->
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg></div>
+            <h3>Свои задачи в общем банке</h3>
+            <p>Добавляете свою задачу одним нажатием. После проверки она попадает в общий банк с отметкой «Проверено экспертом».</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></div>
+            <h3>Умная ссылка-визитка</h3>
+            <p>Одна ссылка, которая презентует вас как профессионала и ведёт новых учеников прямо в кабинет.</p>
+          </article>
+          <article class="card feature">
+            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-wand"/></svg></div>
+            <h3>Помощь с переносом</h3>
+            <p>Поможем перевести учеников и материалы с другой платформы — без потери истории и расписания.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHITE LABEL (скрыто)
+    <section class="section" id="white-label">
+      <div class="container split">
+        <div class="split-copy">
+          <span class="kicker">Продажа статуса</span>
+          <h2>Родители видят только ваш бренд</h2>
+          <p>Ваш личный поддомен, логотип и цвета интерфейса. Ни одна страница не выдаёт, что за ней стоит сторонний сервис — родитель видит только <b>ваш</b> бренд.</p>
+          <ul class="check-list">
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Поддомен третьего уровня за 5 минут</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Ваше фото, логотип и фирменные цвета</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Свой домен на тарифе «Профессионал»</li>
+          </ul>
+        </div>
+        <div class="split-visual">
+          <div class="domain-card">
+            <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
+            <div>
+              <span class="domain-label">Поддомен · тариф «Преподаватель»</span>
+              <b>petrov<span class="dim">.acade-platform.ru</span></b>
+            </div>
+          </div>
+          <div class="domain-card is-own">
+            <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
+            <div>
+              <span class="domain-label">Свой домен · тариф «Профессионал»</span>
+              <b>petrov-education<span class="dim">.com</span></b>
+            </div>
+          </div>
+          <div class="swatches" role="group" aria-label="Выбор фирменной темы">
+            <button class="swatch is-selected" type="button" aria-pressed="true" aria-label="Тема: синяя" style="--c:#2f6bf0" data-theme="blue"></button>
+            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: графит" style="--c:#141a24" data-theme="graphite"></button>
+            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: изумрудная" style="--c:#10b981" data-theme="emerald"></button>
+            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: фиолетовая" style="--c:#7c5cff" data-theme="violet"></button>
+            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: розовая" style="--c:#f43f5e" data-theme="rose"></button>
+            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: янтарная" style="--c:#d97706" data-theme="amber"></button>
+            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: бирюзовая" style="--c:#06b6d4" data-theme="cyan"></button>
+            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: индиго" style="--c:#4f46e5" data-theme="indigo"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ANALYTICS -->
+    <section class="section section-muted" id="analytics">
+      <div class="container split reverse">
+        <div class="split-copy">
+          <span class="kicker">Инструмент для пробных уроков</span>
+          <h2>Обоснуйте высокий чек цифрами</h2>
+          <p>Карточка репетитора с наглядными цифрами: рост баллов, счётчики решённых задач и подтверждённый статус. Откройте этот экран на вводном уроке — и родителю нечего будет возразить.</p>
+          <ul class="check-list">
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Рост баллов в динамике</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Счётчики решённых задач и занятий</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Понятная родителю статистика</li>
+          </ul>
+        </div>
+        <div class="split-visual">
+          <div class="tutor-card">
+            <div class="tutor-head">
+              <div class="tutor-avatar" aria-hidden="true">ИП</div>
+              <div class="tutor-id">
+                <b>Иван Петров</b>
+                <span>Репетитор по математике · ЕГЭ</span>
+              </div>
+              <span class="tutor-verified"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg> Проверен</span>
+            </div>
+
+            <div class="tutor-stats">
+              <div><b data-count="18">18</b><span>учеников</span></div>
+              <div><b data-count="420">420</b><span>занятий</span></div>
+              <div><b data-count="96" data-suffix="%">96%</b><span>довольны</span></div>
+            </div>
+
+            <div class="tutor-rows">
+              <div class="tutor-row"><span>Средний балл ЕГЭ</span><b>84</b></div>
+              <div class="tutor-row"><span>Средний рост за 3 месяца</span><b>+34 балла</b></div>
+              <div class="tutor-row"><span>Задач решено учениками</span><b>1 120</b></div>
+              <div class="tutor-row"><span>Опыт преподавания</span><b>8 лет</b></div>
+            </div>
+
+            <a class="btn btn-primary btn-block" href="#cta">Записаться на пробный урок</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UGC -->
+    <section class="section" id="ugc">
+      <div class="container split">
+        <div class="split-copy">
+          <span class="kicker">Свои задачи</span>
+          <h2>Ваше авторство — в общем банке задач</h2>
+          <p>Придумали свою задачу? Отправьте её на проверку одной кнопкой. После одобрения она попадает в общий банк с отметкой авторства — вам будет чем гордиться, а банк растёт вместе с вами.</p>
+        </div>
+        <div class="split-visual">
+          <div class="badge-card">
+            <div class="badge-ribbon"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg></div>
+            <b>Задача проверена экспертом Иваном Петровым</b>
+            <p>Ваше имя рядом с задачей, которую решают сотни учеников платформы.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAYMENTS -->
+    <section class="section section-muted" id="payments">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Порядок в оплатах</span>
+          <h2>Напоминания, чеки и «Мой налог» — автоматически</h2>
+        </div>
+        <div class="flow">
+          <div class="flow-step"><span class="flow-num">1</span><h3>Напоминание</h3><p>Платформа напоминает ученику об оплате с учётом постоплаты или предоплаты.</p></div>
+          <div class="flow-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
+          <div class="flow-step"><span class="flow-num">2</span><h3>Скриншот</h3><p>Ученик прикрепляет подтверждение перевода прямо в платформе.</p></div>
+          <div class="flow-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
+          <div class="flow-step"><span class="flow-num">3</span><h3>«Оплатил»</h3><p>Вы сверили перевод в банке и отметили оплату в один клик.</p></div>
+          <div class="flow-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
+          <div class="flow-step"><span class="flow-num">4</span><h3>Чек и налог</h3><p>Чек уходит ученику автоматически, а сумма отмечается в «Мой налог».</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Тарифы</span>
+          <h2>Прозрачная подписка. Начните бесплатно</h2>
+          <p class="section-sub">Оплата ежемесячно. Никаких скрытых платежей — платите только за количество учеников.</p>
+        </div>
+        <div class="pricing">
+          <article class="price-card">
+            <h3>Старт</h3>
+            <div class="price"><span class="amount">0 ₽</span><span class="period">навсегда</span></div>
+            <p class="price-desc">Начинающим репетиторам и для тестирования платформы.</p>
+            <ul class="price-features">
+              <li>До 2 учеников</li>
+              <li>Базовый функционал</li>
+              <li>Общий домен</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#cta">Начать бесплатно</a>
+          </article>
+
+          <article class="price-card">
+            <h3>Репетитор</h3>
+            <div class="price"><span class="amount">899 ₽</span><span class="period">/ мес</span></div>
+            <p class="price-desc">Частным учителям с небольшой стабильной нагрузкой.</p>
+            <ul class="price-features">
+              <li>До 8 учеников</li>
+              <li>Общий домен</li>
+              <li>Полный конструктор уроков</li>
+              <li>Помощь с переездом и регистрацией</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#cta">Выбрать тариф</a>
+          </article>
+
+          <article class="price-card featured">
+            <span class="badge-popular">Популярный</span>
+            <h3>Преподаватель</h3>
+            <div class="price"><span class="amount">2 499 ₽</span><span class="period">/ мес</span></div>
+            <p class="price-desc">Опытным педагогам с плотным графиком и упором на личный бренд.</p>
+            <ul class="price-features">
+              <li>До 20 учеников</li>
+              <!-- <li><b>Личный поддомен + логотип</b> (White Label)</li> -->
+              <li>Всё из тарифа «Репетитор»</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#cta">Выбрать тариф</a>
+          </article>
+
+          <!-- Тариф Профессионал (скрыто)
+          <article class="price-card">
+            <h3>Профессионал</h3>
+            <div class="price"><span class="amount">3 999 ₽</span><span class="period">/ мес</span></div>
+            <p class="price-desc">Топовым репетиторам, авторам курсов и небольшим командам.</p>
+            <ul class="price-features">
+              <li>Без лимита по ученикам</li>
+              <li>Свой собственный домен</li>
+              <li>Всё из тарифа «Преподаватель»</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#cta">Выбрать тариф</a>
+          </article>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section-muted" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Отзывы</span>
+          <h2>Что говорят репетиторы</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="card review-card">
+            <div class="review-stars" aria-label="Оценка 5 из 5">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <p class="review-text">Раньше вела всё в таблицах и мессенджерах. Теперь у меня единое расписание, домашки лежат под заданиями, а родители видят динамику. На рутину уходит в разы меньше времени.</p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">ЕС</div>
+              <div>
+                <div class="review-name">Елена Смирнова</div>
+                <div class="review-role">Русский язык · ЕГЭ</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card review-card">
+            <div class="review-stars" aria-label="Оценка 5 из 5">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <p class="review-text">Банк заданий закрыл главную боль — больше не переношу задачи ночами. Беру готовые, а свои добавляю на проверку и получаю отметку автора.</p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">ДК</div>
+              <div>
+                <div class="review-name">Дмитрий Кузнецов</div>
+                <div class="review-role">Информатика · ЕГЭ</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card review-card">
+            <div class="review-stars" aria-label="Оценка 5 из 5">
+              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+            </div>
+            <p class="review-text">Напоминания об оплате и авто-чеки убрали всю возню со скриншотами. Плюс «Мой налог» под рукой — бухгалтерия больше не отнимает вечера.</p>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">МТ</div>
+              <div>
+                <div class="review-name">Марина Титова</div>
+                <div class="review-role">Химия · ОГЭ и ЕГЭ</div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="reviews-more">
+          <a class="btn btn-outline" href="reviews.html">Все отзывы <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-muted" id="faq">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="kicker">Вопросы и ответы</span>
+          <h2>Коротко о главном</h2>
+        </div>
+        <div class="faq" id="faqList">
+          <!-- Настройка (скрыто)
+          <details open>
+            <summary>Нужно ли что-то настраивать самому?</summary>
+            <p>Нет. Всё делает менеджер: заводит поддомен, загружает логотип и фото, подбирает цвета и помогает с переездом.</p>
+          </details>
+          -->
+          <details open>
+            <summary>Что входит в бесплатный тариф?</summary>
+            <p>До 2 учеников, базовый функционал и общий домен. Этого достаточно, чтобы протестировать платформу без риска.</p>
+          </details>
+          <details>
+            <summary>Как перейти с другой платформы?</summary>
+            <p>Поможем с переездом: перенесём учеников, расписание и материалы. Заводить всё заново не придётся.</p>
+          </details>
+          <!-- Свой домен (скрыто)
+          <details>
+            <summary>Можно ли использовать свой домен?</summary>
+            <p>Да, на тарифе «Профессионал» — свой собственный домен.</p>
+          </details>
+          -->
+          <details>
+            <summary>Нужно ли самому собирать банк заданий?</summary>
+            <p>Нет. В платформу уже встроен актуальный банк задач ЕГЭ по основным предметам. Свои задачи можно добавить на проверку.</p>
+          </details>
+          <details>
+            <summary>Как добавить свою задачу в общий банк?</summary>
+            <p>Отправляете её админам одной кнопкой. После проверки задача публикуется с плашкой авторства эксперта.</p>
+          </details>
+          <details>
+            <summary>Как работают оплаты и чеки?</summary>
+            <p>Платформа напоминает ученику об оплате, принимает скриншот, а после вашего подтверждения автоматически отправляет чек. Суммы отмечаются в «Мой налог».</p>
+          </details>
+          <!-- White Label (скрыто)
+          <details>
+            <summary>Увидит ли ученик, что вы используете стороннюю платформу?</summary>
+            <p>Нет. Ученик и родитель работают на вашем поддомене и видят только ваш бренд и ваши цвета.</p>
+          </details>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="cta">
+      <div class="container cta-inner">
+        <div class="cta-copy">
+          <h2>Наведите порядок в уроках уже сегодня</h2>
+          <p>Оставьте заявку — поможем с переездом с другой платформы и переведём учеников. Начать можно бесплатно.</p>
+          <ul class="check-list">
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Бесплатный тариф навсегда</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Помощь с переносом</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Ответим в течение рабочего дня</li>
+          </ul>
+        </div>
+
+        <form class="cta-form" id="leadForm" novalidate>
+          <div class="field">
+            <label for="name">Ваше имя</label>
+            <input id="name" name="name" type="text" placeholder="Иван Петров" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="contact">Телефон или e-mail</label>
+            <input id="contact" name="contact" type="text" placeholder="+7 900 000-00-00" autocomplete="tel" required />
+          </div>
+          <div class="field">
+            <label for="students">Сколько у вас учеников?</label>
+            <select id="students" name="students">
+              <option value="0">Пока нет</option>
+              <option value="1-5">1–5</option>
+              <option value="6-15">6–15</option>
+              <option value="16-30">16–30</option>
+              <option value="30+">Больше 30</option>
+            </select>
+          </div>
+          <button class="btn btn-primary btn-block btn-lg" type="submit">Создать мой кабинет <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="form-hint" id="formHint" role="status" aria-live="polite">Отправляя заявку, вы соглашаетесь на обработку персональных данных.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="logo logo-light" href="#top">
+          <span class="logo-mark" aria-hidden="true">A</span>
+          <span class="logo-text">Аcade<span class="logo-sub">Платформа</span></span>
+        </a>
+        <!-- <p>White-Label LMS/CRM для репетиторов: порядок в уроках и оплатах.</p> -->
+      </div>
+      <nav class="footer-nav" aria-label="Разделы">
+        <a href="#order">Порядок</a>
+        <a href="#features">Возможности</a>
+        <!-- <a href="#white-label">White Label</a> -->
+        <a href="#pricing">Тарифы</a>
+        <a href="reviews.html">Отзывы</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <div class="footer-contact">
+        <span>Свяжитесь с нами</span>
+        <a href="tel:+79936257102">+7 (993) 625-71-02</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Аcade Платформа. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
