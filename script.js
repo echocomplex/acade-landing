@@ -230,13 +230,17 @@
         return;
       }
 
-      form.classList.add('is-sent');
+      form.classList.add('is-error');
       form.innerHTML =
-        '<div class="success-icon">' +
-        '<svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>' +
+        '<div class="error-icon">' +
+        '<svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>' +
         '</div>' +
-        '<h3>Заявка отправлена!</h3>' +
-        '<p>Спасибо, ' + escapeHtml(name.value.trim()) + '. Мы свяжемся с вами в течение рабочего дня и поможем с переносом.</p>';
+        '<h3>Ошибка отправки формы</h3>' +
+        '<p>Не удалось отправить заявку. Попробуйте ещё раз или позвоните нам.</p>' +
+        '<button class="btn btn-primary btn-block" type="button" id="leadRetry">Попробовать снова</button>';
+
+      var retry = document.getElementById('leadRetry');
+      if (retry) retry.addEventListener('click', function () { window.location.reload(); });
 
       if (typeof window.ym === 'function' && window.YM_COUNTER_ID) {
         window.ym(window.YM_COUNTER_ID, 'reachGoal', 'lead_form');
@@ -247,12 +251,6 @@
       input.addEventListener('input', function () {
         input.classList.remove('invalid');
       });
-    });
-  }
-
-  function escapeHtml(str) {
-    return String(str).replace(/[&<>"']/g, function (c) {
-      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
 })();

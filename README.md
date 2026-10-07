@@ -1,1 +1,0 @@
-# acade-landing
