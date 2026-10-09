@@ -49,7 +49,7 @@
   }
 
   function setupReveals() {
-    var selector = '.page-hero, .section-head, .card, .steps li, .flow-step, .flow-arrow, .price-card, .faq details, .turn, .badge-card, .domain-card, .cta-copy, .cta-form, .cta-action, .split-copy, .split-visual, .trust-bar li';
+    var selector = '.page-hero, .section-head, .card, .steps li, .flow-step, .flow-arrow, .price-card, .faq details, .turn, .badge-card, .domain-card, .cta-copy, .cta-form, .cta-action, .loss-item, .loss-total, .split-copy, .split-visual, .trust-bar li';
     var counters = new Map();
 
     // Направление для секций с двумя колонками
