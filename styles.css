@@ -291,7 +291,7 @@ img { max-width: 100%; display: block; }
 .flow-arrow .icon { width: 26px; height: 26px; }
 
 /* Losses */
-.loss-layout { display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px; align-items: stretch; }
+.loss-layout { display: grid; grid-template-columns: 1fr; gap: 20px; }
 .loss-list { display: flex; flex-direction: column; gap: 14px; }
 .loss-item { display: flex; gap: 16px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow-sm); }
 .loss-icon { width: 46px; height: 46px; border-radius: 13px; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; flex-shrink: 0; }
