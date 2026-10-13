@@ -155,10 +155,9 @@
     root.style.colorScheme = theme.dark ? 'dark' : 'light';
   }
 
-  // Восстановление выбранной темы между страницами
+  // Тема по умолчанию — тёмная (задана в :root). Переключатель темы скрыт,
+  // поэтому сохранённое значение из localStorage не применяем.
   var savedTheme = null;
-  try { savedTheme = window.localStorage.getItem('acade-theme'); } catch (e) {}
-  if (savedTheme && THEMES[savedTheme]) applyTheme(THEMES[savedTheme]);
 
   function setupThemes() {
     var swatches = document.querySelectorAll('.swatch');

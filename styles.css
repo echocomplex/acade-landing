@@ -1,32 +1,33 @@
-@property --bg { syntax: '<color>'; inherits: true; initial-value: #f6f6f4; }
-@property --surface { syntax: '<color>'; inherits: true; initial-value: #ffffff; }
-@property --ink { syntax: '<color>'; inherits: true; initial-value: #10151f; }
-@property --ink-soft { syntax: '<color>'; inherits: true; initial-value: #2a3242; }
-@property --muted { syntax: '<color>'; inherits: true; initial-value: #5c6675; }
-@property --border { syntax: '<color>'; inherits: true; initial-value: #e5e7eb; }
-@property --blue { syntax: '<color>'; inherits: true; initial-value: #2f6bf0; }
-@property --blue-700 { syntax: '<color>'; inherits: true; initial-value: #1f57d6; }
-@property --blue-soft { syntax: '<color>'; inherits: true; initial-value: #eaf1ff; }
-@property --violet { syntax: '<color>'; inherits: true; initial-value: #7c5cff; }
-@property --graphite { syntax: '<color>'; inherits: true; initial-value: #141a24; }
+@property --bg { syntax: '<color>'; inherits: true; initial-value: #0f1319; }
+@property --surface { syntax: '<color>'; inherits: true; initial-value: #171d26; }
+@property --ink { syntax: '<color>'; inherits: true; initial-value: #eef2f7; }
+@property --ink-soft { syntax: '<color>'; inherits: true; initial-value: #cdd5e0; }
+@property --muted { syntax: '<color>'; inherits: true; initial-value: #93a0b4; }
+@property --border { syntax: '<color>'; inherits: true; initial-value: #26303d; }
+@property --blue { syntax: '<color>'; inherits: true; initial-value: #4d82f3; }
+@property --blue-700 { syntax: '<color>'; inherits: true; initial-value: #6f9bff; }
+@property --blue-soft { syntax: '<color>'; inherits: true; initial-value: #1b2740; }
+@property --violet { syntax: '<color>'; inherits: true; initial-value: #8b6bff; }
+@property --graphite { syntax: '<color>'; inherits: true; initial-value: #0b0e13; }
 
 :root {
-  --bg: #f6f6f4;
-  --surface: #ffffff;
-  --ink: #10151f;
-  --ink-soft: #2a3242;
-  --muted: #5c6675;
-  --border: #e5e7eb;
-  --blue: #2f6bf0;
-  --blue-700: #1f57d6;
-  --blue-soft: #eaf1ff;
-  --graphite: #141a24;
-  --violet: #7c5cff;
+  color-scheme: dark;
+  --bg: #0f1319;
+  --surface: #171d26;
+  --ink: #eef2f7;
+  --ink-soft: #cdd5e0;
+  --muted: #93a0b4;
+  --border: #26303d;
+  --blue: #4d82f3;
+  --blue-700: #6f9bff;
+  --blue-soft: #1b2740;
+  --violet: #8b6bff;
+  --graphite: #0b0e13;
   --radius: 16px;
   --radius-sm: 10px;
-  --shadow-sm: 0 1px 2px rgba(16, 21, 31, 0.06);
-  --shadow-md: 0 8px 24px rgba(16, 21, 31, 0.08);
-  --shadow-lg: 0 24px 60px rgba(16, 21, 31, 0.16);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 26px 64px rgba(0, 0, 0, 0.55);
   --container: 1160px;
   transition: --bg .5s ease, --surface .5s ease, --ink .5s ease, --ink-soft .5s ease,
     --muted .5s ease, --border .5s ease, --blue .5s ease, --blue-700 .5s ease,
@@ -114,6 +115,7 @@ img { max-width: 100%; display: block; }
 .logo-mark {
   width: 34px; height: 34px; flex-shrink: 0;
   object-fit: contain; display: block;
+  filter: brightness(0) invert(1);
 }
 .logo-light .logo-mark { filter: brightness(0) invert(1); }
 .logo-text { display: flex; flex-direction: column; line-height: 1; font-size: 1.12rem; }
@@ -151,27 +153,27 @@ img { max-width: 100%; display: block; }
 
 /* Browser mock */
 .hero-visual { position: relative; }
-.browser { background: #ffffff; border: 1px solid #e1e3e8; border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-lg); }
-.browser-bar { display: flex; align-items: center; gap: 6px; padding: 12px 14px; background: #f1f2f4; border-bottom: 1px solid #e6e8ec; }
+.browser { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; overflow: hidden; box-shadow: var(--shadow-lg); }
+.browser-bar { display: flex; align-items: center; gap: 6px; padding: 12px 14px; background: color-mix(in srgb, var(--bg) 60%, var(--surface)); border-bottom: 1px solid var(--border); }
 .dot { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
 .dot.red { background: #ff5f57; } .dot.yellow { background: #febc2e; } .dot.green { background: #28c840; }
-.browser-url { margin-left: 12px; display: inline-flex; align-items: center; gap: 7px; font-size: 0.82rem; color: #5c6675; background: #fff; border: 1px solid #e1e3e8; border-radius: 8px; padding: 5px 12px; }
+.browser-url { margin-left: 12px; display: inline-flex; align-items: center; gap: 7px; font-size: 0.82rem; color: var(--muted); background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 5px 12px; }
 .browser-body { display: grid; grid-template-columns: 128px 1fr; min-height: 240px; }
-.mock-side { background: #fafafa; border-right: 1px solid #e6e8ec; padding: 16px 12px; display: flex; flex-direction: column; gap: 10px; }
-.mock-logo { font-weight: 800; font-size: 0.82rem; color: #10151f; margin-bottom: 8px; }
-.mock-nav { height: 9px; border-radius: 6px; background: #e9ebef; }
+.mock-side { background: color-mix(in srgb, var(--bg) 60%, var(--surface)); border-right: 1px solid var(--border); padding: 16px 12px; display: flex; flex-direction: column; gap: 10px; }
+.mock-logo { font-weight: 800; font-size: 0.82rem; color: var(--ink); margin-bottom: 8px; }
+.mock-nav { height: 9px; border-radius: 6px; background: var(--border); }
 .mock-nav.active { background: var(--blue); opacity: .9; width: 80%; }
 .mock-main { padding: 18px; display: flex; flex-direction: column; gap: 14px; }
 .mock-topbar { display: flex; align-items: center; justify-content: space-between; }
-.mock-title { font-weight: 700; font-size: 0.92rem; color: #10151f; }
-.mock-chip { font-size: 0.72rem; font-weight: 700; color: #1f57d6; background: #eaf1ff; padding: 4px 10px; border-radius: 999px; }
+.mock-title { font-weight: 700; font-size: 0.92rem; color: var(--ink); }
+.mock-chip { font-size: 0.72rem; font-weight: 700; color: var(--blue); background: var(--blue-soft); padding: 4px 10px; border-radius: 999px; }
 .mock-list { display: flex; flex-direction: column; gap: 10px; }
-.mock-lesson { display: flex; align-items: center; gap: 12px; background: #f7f8fa; border: 1px solid #e6e8ec; border-radius: 12px; padding: 12px 14px; }
-.mock-time { font-weight: 800; font-size: 0.9rem; color: #10151f; }
+.mock-lesson { display: flex; align-items: center; gap: 12px; background: color-mix(in srgb, var(--surface) 86%, var(--ink)); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; }
+.mock-time { font-weight: 800; font-size: 0.9rem; color: var(--ink); }
 .mock-who { flex: 1; min-width: 0; }
-.mock-who b { display: block; font-size: 0.86rem; color: #10151f; }
-.mock-who span { font-size: 0.72rem; color: #5c6675; }
-.mock-link { font-size: 0.72rem; font-weight: 700; color: #fff; background: #2f6bf0; padding: 5px 12px; border-radius: 8px; }
+.mock-who b { display: block; font-size: 0.86rem; color: var(--ink); }
+.mock-who span { font-size: 0.72rem; color: var(--muted); }
+.mock-link { font-size: 0.72rem; font-weight: 700; color: #fff; background: var(--blue); padding: 5px 12px; border-radius: 8px; }
 .hero-float {
   position: absolute; right: -14px; bottom: -22px;
   display: flex; align-items: center; gap: 12px;
@@ -349,6 +351,7 @@ img { max-width: 100%; display: block; }
   transition: border-color .15s ease, box-shadow .15s ease;
 }
 .field input:focus, .field select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 20%, transparent); }
+.field input::placeholder, .field select::placeholder { color: var(--muted); opacity: 1; }
 .field input.invalid { border-color: #ef4444; box-shadow: 0 0 0 3px rgba(239,68,68,.15); }
 .form-hint { font-size: 0.78rem; color: var(--muted); text-align: center; }
 .cta-form.is-sent { justify-content: center; align-items: center; text-align: center; min-height: 320px; }
