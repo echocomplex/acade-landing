@@ -3,708 +3,706 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Аcade — платформа для репетиторов ЕГЭ и ОГЭ по информатике</title>
-  <meta name="description" content="Аcade собирает расписание, домашки, проверку задач и оплаты репетитора по информатике в одно окно. Банк заданий ЕГЭ и ОГЭ, авто-напоминания и чеки. Бесплатный тариф." />
-  <meta name="theme-color" content="#0f1319" />
+  <title>Acade AI — ИИ-ассистент для репетиторов: готовый урок за 10 минут</title>
+  <meta name="description" content="Среда подготовки к урокам для репетиторов: точные формулы, рабочий лист в PDF и интерактивный тест в HTML. Без VPN, оплата картой РФ, без скрытых лимитов. 3 урока бесплатно." />
+  <meta name="theme-color" content="#0a0d13" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Аcade — порядок в подготовке к ЕГЭ и ОГЭ по информатике" />
-  <meta property="og:description" content="Платформа для репетиторов по информатике: банк заданий ЕГЭ и ОГЭ, проверка решений, расписание, напоминания и оплаты — в одном окне." />
-  <meta property="og:site_name" content="Аcade" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Acade AI" />
+  <meta property="og:title" content="Acade AI — готовый урок за 10 минут, а не за вечер с правками" />
+  <meta property="og:description" content="ИИ-среда подготовки для репетиторов: методическая точность, PDF-рабочие листы и интерактивные тесты. Работает в России без VPN." />
+  <meta property="og:image" content="logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Acade AI",
+    "description": "ИИ-ассистент для репетиторов: методическая проверка, рабочие листы в PDF и интерактивные тесты в HTML.",
+    "brand": { "@type": "Brand", "name": "Acade" },
+    "offers": [
+      { "@type": "Offer", "name": "Проба", "price": "0", "priceCurrency": "RUB" },
+      { "@type": "Offer", "name": "Репетитор", "price": "990", "priceCurrency": "RUB" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "У меня уже есть ChatGPT. Зачем мне Acade AI?",
+        "acceptedAnswer": { "@type": "Answer", "text": "ChatGPT — универсальный инструмент на все случаи. Acade AI — среда подготовки: собирает урок по параметрам, сверяет формулы, верстает PDF и делает интерактивный тест. ChatGPT поможет найти идею, Acade AI отдаёт готовый материал." }
+      },
+      {
+        "@type": "Question",
+        "name": "Насколько точны формулы и задания?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Формулы и структура проходят методическую проверку внутри платформы, задания собираются под уровень ученика. Финальное слово остаётся за преподавателем: Acade AI убирает рутину, а не заменяет экспертизу." }
+      },
+      {
+        "@type": "Question",
+        "name": "Это точно работает в России без VPN?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Да. Платформа доступна без VPN, оплата проходит российской картой. Никаких зарубежных аккаунтов и скрытых лимитов." }
+      },
+      {
+        "@type": "Question",
+        "name": "Что происходит с моими материалами?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Материалы используются только для подготовки ваших уроков. Мы не обучаем модели на ваших файлах без разрешения. Данные передаются по защищённому соединению, доступ есть только у вас." }
+      },
+      {
+        "@type": "Question",
+        "name": "Сколько времени это реально экономит?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Рабочий лист или тест обычно собирается за 8–12 минут вместо 1,5–2 часов ручной работы. На бесплатном тарифе это можно проверить на трёх своих уроках — без карты." }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    window.YM_COUNTER_ID = 113534810;
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=113534810', 'ym');
-
-
-    ym(113534810, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/113534810" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
 
   <!-- SVG sprite -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></symbol>
-    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
-    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
-    <symbol id="i-badge" viewBox="0 0 24 24"><path d="M12 2l2.2 2.2 3-.3.3 3L20 9l-2.2 2.2.3 3-3 .3L12 17l-2.2-2.2-3 .3-.3-3L4 9l2.2-2.2-.3-3 3 .3z"/><path d="M9 9l2 2 4-4"/></symbol>
-    <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M3 10h18"/></symbol>
-    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></symbol>
-    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></symbol>
-    <symbol id="i-wand" viewBox="0 0 24 24"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M17.8 6.2 19 5"/><path d="M3 21l9-9"/><path d="M12.2 6.2 11 5"/></symbol>
-    <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
-    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></symbol>
-    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></symbol>
-    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></symbol>
-    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8"/><path d="M8 17h6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 20 6v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5z"/><path d="M2 12l10 5 10-5"/><path d="M2 17l10 5 10-5"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><path d="M12 2l2.2 2.2 3-.3.3 3L20 9l-2.2 2.2.3 3-3 .3L12 17l-2.2-2.2-3 .3-.3-3L4 9l2.2-2.2-.3-3 3 .3z"/><path d="M9 9l2 2 4-4"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/></symbol>
   </svg>
 
   <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="logo" href="#top" aria-label="Аcade — на главную">
-        <img class="logo-mark" src="logo.png" alt="" aria-hidden="true" />
-        <span class="logo-text">Аcade<span class="logo-sub">Платформа</span></span>
+      <a class="logo" href="#top" aria-label="Acade AI — на главную">
+        <img class="logo-mark" src="logo.png" alt="" width="34" height="34" />
+        <span class="logo-word">Acade<span class="logo-sub">AI-ассистент</span></span>
       </a>
 
       <nav class="nav" id="primary-nav" aria-label="Основная навигация">
-        <a href="#order">Порядок</a>
+        <a href="#pain">Где теряется время</a>
         <a href="#features">Возможности</a>
-        <a href="#analytics">Статистика</a>
+        <a href="#how">Как это работает</a>
         <a href="#pricing">Тарифы</a>
-        <a href="reviews.html">Отзывы</a>
         <a href="#faq">Вопросы</a>
+        <a class="nav-cta" href="#cta">Попробовать бесплатно</a>
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-primary btn-sm" href="#cta">Начать бесплатно</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">
+        <a class="btn btn-primary btn-sm" href="#cta">Попробовать бесплатно</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="primary-nav">
           <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
         </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
+  <main id="main">
+    <!--
+      HERO: три варианта заголовка и подзаголовка.
+      A (выбран для страницы ниже):
+        H1: «Готовый урок за 10 минут — а не за вечер с правками.»
+        Sub: «Acade AI — среда подготовки к урокам, а не очередной чат-бот. Внутри — строгий методист:
+             точные формулы, выверенные задания, рабочий лист в PDF и тест в HTML. Без VPN, оплата российской картой, без скрытых лимитов.»
+      B (акцент на точность):
+        H1: «ИИ, который работает как методист, а не подлизывает.»
+        Sub: «Точные формулы, выверенная структура и готовый формат. Вы проверяете смысл — а не исправляете за машиной.»
+      C (акцент на доступность):
+        H1: «Ваш ИИ для уроков. Без VPN, лимитов и танцев с картой.»
+        Sub: «Специализированная среда подготовки: рабочие листы, тесты и разборы за минуты. Оплата российской картой, данные под защитой.»
+    -->
+    <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-calendar"/></svg> Для репетиторов ЕГЭ и ОГЭ по информатике</span>
-          <h1>Платформа для репетиторов по информатике, которая <span class="accent">не подведёт.</span></h1>
+          <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> ИИ-ассистент для репетиторов</span>
+          <h1 id="hero-title">Готовые материалы к уроку за <span class="hl">5 минут</span> — а не полтора часа.</h1>
           <p class="lead">
-            Расписание, банк заданий с проверкой, домашки и оплаты — в одном месте.
-            Аcade наводит порядок у репетиторов по информатике, чтобы вы готовили
-            к экзамену, а не разгребали рутину.
+            Acade AI — среда подготовки к урокам, а не очередной чат-ассистент. Внутри — строгий методист:
+            точные формулы, выверенные задания, конвертация в PDF, генерация интерактивных тестов и презентаций.
+            Без VPN, оплата российской картой, без скрытых лимитов.
           </p>
-
           <div class="hero-cta">
-            <a class="btn btn-primary btn-lg" href="#cta">Начать бесплатно <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn-ghost btn-lg" href="#order">Как это устроено</a>
+            <a class="btn btn-primary btn-lg" href="#cta">Собрать первый урок <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-secondary btn-lg" href="#how">Как это работает</a>
           </div>
-
           <ul class="hero-trust">
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Банк заданий ЕГЭ и ОГЭ по информатике</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Короткие ответы проверяются автоматически</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Напоминания за 24 ч и за час</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> 5 генераций бесплатно ежемесячно</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Оплата российскими картами</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Работает в РФ без VPN</li>
           </ul>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="browser">
-            <div class="browser-bar">
+          <div class="app">
+            <div class="app-bar">
               <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-              <span class="browser-url"><svg class="icon icon-sm"><use href="#i-globe"/></svg> Личный кабинет</span>
+              <span class="app-url"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-globe"/></svg> acade.ai/lesson/new</span>
+              <span class="app-status"><span class="live-dot" aria-hidden="true"></span> без VPN</span>
             </div>
-            <div class="browser-body">
-              <div class="mock-side">
-                <span class="mock-logo">И.&nbsp;Петров</span>
-                <span class="mock-nav active"></span>
-                <span class="mock-nav"></span>
-                <span class="mock-nav"></span>
-                <span class="mock-nav"></span>
-              </div>
-              <div class="mock-main">
-                <div class="mock-topbar">
-                  <span class="mock-title">Информатика · сегодня</span>
-                  <span class="mock-chip">3 урока</span>
+            <div class="app-body">
+              <aside class="app-side" aria-hidden="true">
+                <span class="side-logo"><svg class="icon icon-xs"><use href="#i-spark"/></svg> Acade AI</span>
+                <span class="side-item is-active"><svg class="icon icon-xs"><use href="#i-spark"/></svg> Урок</span>
+                <span class="side-item"><svg class="icon icon-xs"><use href="#i-layers"/></svg> Шаблоны</span>
+                <span class="side-item"><svg class="icon icon-xs"><use href="#i-doc"/></svg> Материалы</span>
+                <span class="side-item"><svg class="icon icon-xs"><use href="#i-sliders"/></svg> Настройки</span>
+                <div class="side-bottom">
+                  <span class="side-plan">Тариф «Репетитор»</span>
+                  <span class="side-bar"><i style="width:60%"></i></span>
+                  <span class="side-note">24 из 40 уроков</span>
                 </div>
-                <div class="mock-list">
-                  <div class="mock-lesson">
-                    <span class="mock-time">16:00</span>
-                    <div class="mock-who"><b>Мария К.</b><span>Домашка прикреплена</span></div>
-                    <span class="mock-link">Ссылка</span>
+              </aside>
+
+              <div class="app-main">
+                <div class="prompt">
+                  <div class="prompt-head">
+                    <span class="prompt-label"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-spark"/></svg> Новый урок</span>
+                    <span class="prompt-time">≈ 9 мин</span>
                   </div>
-                  <div class="mock-lesson">
-                    <span class="mock-time">17:30</span>
-                    <div class="mock-who"><b>Артём П.</b><span>Напоминание отправлено</span></div>
-                    <span class="mock-link">Ссылка</span>
+                  <p class="prompt-text">Рабочий лист по квадратным уравнениям. 8 класс, 45 минут, средний уровень.</p>
+                  <div class="prompt-chips">
+                    <span>Алгебра</span><span>8 класс</span><span>PDF + HTML</span>
                   </div>
-                  <div class="mock-lesson">
-                    <span class="mock-time">19:00</span>
-                    <div class="mock-who"><b>София Р.</b><span>Оплата подтверждена</span></div>
-                    <span class="mock-link">Ссылка</span>
+                  <div class="prompt-action"><span class="prompt-btn">Собрать урок</span></div>
+                </div>
+
+                <div class="sheet-wrap">
+                  <div class="sheet">
+                    <div class="sheet-top"><span>Acade AI · Рабочий лист</span><span>Алгебра · 8 класс</span></div>
+                    <h4>Квадратные уравнения</h4>
+                    <div class="sheet-meta"><span>Вариант 1</span><span>45 минут</span><span>10 заданий</span></div>
+                    <div class="sheet-tasks">
+                      <div class="task">
+                        <span class="task-num">1</span>
+                        <div>
+                          <p>Решите уравнение:</p>
+                          <p class="math">x² − 5x + 6 = 0</p>
+                        </div>
+                      </div>
+                      <div class="task">
+                        <span class="task-num">2</span>
+                        <div>
+                          <p>Найдите сумму корней:</p>
+                          <p class="math">2x² + 7x − 4 = 0</p>
+                        </div>
+                      </div>
+                      <div class="sheet-grid" aria-hidden="true"></div>
+                    </div>
+                    <div class="sheet-foot"><span>Имя: __________________</span><span>Дата: __________</span></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="hero-float">
-            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
-            <div><b>Напоминание отправлено</b><span>ученику — за 24 часа до урока</span></div>
+
+          <div class="float-badge float-badge-ok">
+            <svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg>
+            <span><b>Формулы сверены</b><small>методическая проверка</small></span>
+          </div>
+          <div class="float-badge float-badge-pdf">
+            <svg class="icon icon-sm" aria-hidden="true"><use href="#i-doc"/></svg>
+            <span><b>PDF и HTML готовы</b><small>без ручной вёрстки</small></span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- PROBLEMS -->
-    <section class="section section-muted" id="problems">
       <div class="container">
-        <div class="section-head">
-          <span class="kicker">Знакомая рутина?</span>
-          <h2>Задачи по информатике живут в пяти приложениях</h2>
-          <p class="section-sub">Расписание, ссылки, условия задач, проверка решений и оплаты разбросаны по календарям, чатам и блокнотам — и всё держится на вашей памяти.</p>
-        </div>
-        <div class="cards-3">
-          <article class="card pain">
-            <h3>Расписание — в календаре</h3>
-            <p>Ссылки на уроки лежат в заметках, и каждый раз приходится вспоминать, какая из них для какого ученика.</p>
-          </article>
-          <article class="card pain">
-            <h3>Задачи и разборы тонут в переписке</h3>
-            <p>Условия, программы и разборы разбросаны по чатам. Ученики не находят их, а вы повторяете одно и то же по десять раз.</p>
-          </article>
-          <article class="card pain">
-            <h3>Проверка решений вручную</h3>
-            <p>Сверять ответы по номерам заданий и разбирать решения вручную — долго, а прогресс ученика нигде не видно.</p>
-          </article>
-          <article class="card pain">
-            <h3>Учёта оплат нет</h3>
-            <p>Постоплата и предоплата, скриншоты, чеки и налог — всё вручную, и всё вечно путается.</p>
-          </article>
-          <article class="card pain">
-            <h3>Пять вкладок на один урок</h3>
-            <p>Видеозвонки, мессенджер, условия задач и таблицы не связаны между собой. Половина времени уходит на переключение.</p>
-          </article>
-          <article class="card pain">
-            <h3>Общей картины нет</h3>
-            <p>Непонятно, кто оплатил, кто решил домашки и что на следующем уроке — всё собирается в голове по кусочкам.</p>
-          </article>
-        </div>
-        <p class="turn">Аcade собирает всё это в одно окно — и ведёт за вас.</p>
-      </div>
-    </section>
-
-    <!-- ORDER (ANTI-CHAOS) -->
-    <section class="section section-muted" id="order">
-      <div class="container split">
-        <div class="split-copy">
-          <span class="kicker">Анти-хаос</span>
-          <h2>Одно окно вместо пяти приложений</h2>
-          <p>Перестаньте быть диспетчером между календарём, чатами и таблицами. Аcade собирает расписание, домашки, напоминания и оплаты в одном месте — и ведёт их за вас.</p>
-          <ul class="check-list">
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Расписание: к каждому уроку привязана ссылка на любой сервис</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Домашки и разборы — под заданиями, с автопроверкой коротких ответов</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Автонапоминания ученику — за 24 часа и за час до урока</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Оплаты: напоминания, скриншот, авто-чек и «Мой налог»</li>
+        <div class="subject-strip">
+          <span class="subject-label">Подходит для любого предмета</span>
+          <ul class="subject-chips">
+            <li><span class="glyph">∑</span> Математика</li>
+            <li><span class="glyph">Aa</span> Языки</li>
+            <li><span class="glyph">&lt;/&gt;</span> Информатика</li>
+            <li><span class="glyph">φ</span> Физика</li>
+            <li><span class="glyph">+</span> И даже философия</li>
           </ul>
         </div>
-        <div class="split-visual">
-          <div class="chaos-merge">
-            <div class="chaos-col before">
-              <span class="chaos-label">Раньше — пять приложений</span>
-              <ul>
-                <li>Календарь — расписание</li>
-                <li>Заметки — ссылки на уроки</li>
-                <li>Мессенджер — домашки и разборы</li>
-                <li>Таблицы — учёт оплат</li>
-                <li>Голова — все напоминания</li>
-              </ul>
+      </div>
+    </section>
+
+    <section class="section pain-section" id="pain" aria-labelledby="pain-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Где теряется время</span>
+          <h2 id="pain-title">ИИ должен экономить время.<br />Пока что он его съедает.</h2>
+          <p class="section-sub">Если вы уже пробовали готовить уроки с GPT или Claude, эти три сценария знакомы до боли.</p>
+        </div>
+
+        <div class="pain-grid">
+          <article class="pain-card pain-time">
+            <span class="card-num">01 · Налог на время</span>
+            <h3>Сгенерировал — и сел переписывать</h3>
+            <p>Модель выдаёт общий черновик: не тот уровень, лишние объяснения, неверная структура. Исправлять дольше, чем сделать самому. В итоге ИИ может отнять больше времени, чем вручную подготовить все материалы.</p>
+            <span class="pain-tag">«Быстрее руками»</span>
+          </article>
+
+          <article class="pain-card pain-trust">
+            <span class="card-num">02 · Доверие</span>
+            <h3>Формулы, разлиновка и «почти правильные» факты</h3>
+            <p>Съехавший индекс, потерянный минус, кривая таблица, задание не по возрасту. Вы не готовите урок — вы работаете корректором. И всё равно перепроверяете каждый символ.</p>
+            <span class="pain-tag">«Правки съедают время»</span>
+          </article>
+
+          <article class="pain-card pain-access">
+            <span class="card-num">03 · Доступ</span>
+            <h3>VPN, лимиты и карта, которая не проходит</h3>
+            <p>Оплата отклоняется, лимит заканчивается в середине работы, доступ может пропасть. Вместо подготовки — техническая возня и страх, что завтра аккаунт не откроется.</p>
+            <span class="pain-tag">«Танцы с VPN»</span>
+          </article>
+        </div>
+
+        <div class="time-tax">
+          <div class="time-tax-head">
+            <div>
+              <span class="kicker">Налог на время · целый урок</span>
+              <p class="time-tax-sub">Так выглядит подготовка, когда ИИ не знает формата.</p>
             </div>
-            <div class="chaos-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
-            <div class="chaos-col after">
-              <span class="chaos-label">Теперь — одно окно</span>
-              <ul>
-                <li>Расписание со ссылками</li>
-                <li>Домашки под заданиями</li>
-                <li>Автонапоминания ученикам</li>
-                <li>Оплаты, чеки и налог</li>
-              </ul>
+            <span class="time-total">≈ 1 ч 5 мин</span>
+          </div>
+          <div class="time-track" role="img" aria-label="Генерация 15 минут, правки и вёрстка 30 минут, сборка файлов 20 минут. Итого около 1 часа и 5 минут на один урок.">
+            <div class="time-seg seg-gen" style="flex:1">
+              <b>15 мин</b><span>генерация</span>
+            </div>
+            <div class="time-seg seg-edit" style="flex:5">
+              <b>30 мин</b><span>правки и вёрстка</span>
+            </div>
+            <div class="time-seg seg-pack" style="flex:1">
+              <b>20 мин</b><span>сборка файлов</span>
             </div>
           </div>
+          <p class="time-note">Это время, за которое можно провести ещё один урок. И это без учёта повторной генерации, когда результат совсем не тот.</p>
+        </div>
+
+        <p class="turn">Проблема не в том, что ИИ плохо думает.<br />Проблема в том, что он <span>не знает, как устроен урок.</span></p>
+        <p class="turn-sub">Acade AI построен вокруг методики, формата и вашего времени.</p>
+      </div>
+    </section>
+
+    <section class="section theme-paper" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Есть решение – Acade</span>
+          <h2 id="features-title">Не чат-ассистент, а среда подготовки уроков.</h2>
+          <p class="section-sub">Вы не выпрашиваете результат в диалоге — вы задаёте параметры и получаете материал, который можно использовать сразу.</p>
+        </div>
+
+        <div class="compare">
+          <div class="compare-col bad">
+            <div class="compare-head">
+              <span class="compare-label">Обычный чат-бот</span>
+              <span class="compare-tag">как сейчас</span>
+            </div>
+            <ul>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-x"/></svg> Выдаёт текст, который надо переписать</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-x"/></svg> Путает формулы, знаки и разлиновку</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-x"/></svg> PDF собираете вручную из скриншотов</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-x"/></svg> VPN, лимиты, зарубежная карта</li>
+            </ul>
+          </div>
+          <div class="compare-col good">
+            <div class="compare-head">
+              <span class="compare-label"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-spark"/></svg> Acade AI</span>
+              <span class="compare-tag">как должно быть</span>
+            </div>
+            <ul>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Отдаёт готовый урок по вашим параметрам</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Сверяет формулы, термины и структуру</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> PDF, презентации и интерактивные тесты — в один клик</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Работает в РФ, оплата картой РФ</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modules-head">
+          <div>
+            <span class="kicker">Что внутри</span>
+            <h3>Четыре вещи, которые меняют подготовку</h3>
+          </div>
+          <p>Не функции ради функций — инструменты, которые снимают рутину с репетитора.</p>
+        </div>
+
+        <div class="modules-grid">
+          <article class="module module-method">
+            <div class="module-top">
+              <span class="module-index">01</span>
+              <span class="module-icon"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg></span>
+            </div>
+            <span class="module-kicker">Методист</span>
+            <h3>Строгий методист, а не подлиза</h3>
+            <p>Acade AI проверяет логику решения, формулы и соответствие уровню ученика. Если в задании что-то не сходится, он скажет об этом — а не добавит уверенности ради галочки.</p>
+            <p class="module-benefit"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Вы проверяете смысл, а не охотитесь за ошибками.</p>
+          </article>
+
+          <article class="module module-format">
+            <div class="module-top">
+              <span class="module-index">02</span>
+              <span class="module-icon"><svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg></span>
+            </div>
+            <span class="module-kicker">Идеальный формат</span>
+            <h3>Рабочий лист, который не стыдно распечатать</h3>
+            <p>Ровные разлиновки, корректные масштабы, аккуратные формулы и поля. PDF готов к печати, HTML — к отправке ученику. Без скриншотов и ручной доводки.</p>
+            <p class="module-benefit"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Ноль вёрстки перед уроком.</p>
+          </article>
+
+          <article class="module module-interactive">
+            <div class="module-top">
+              <span class="module-index">03</span>
+              <span class="module-icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+            </div>
+            <span class="module-kicker">Интерактив</span>
+            <h3>Тест, который проверяет себя сам</h3>
+            <p>Соберите интерактивный тест по теме. Ученик проходит его по ссылке, а вы видите результат по каждому заданию — без пересылки файлов и ручной проверки.</p>
+            <p class="module-benefit"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Больше практики, меньше рутины.</p>
+          </article>
+
+          <article class="module module-access">
+            <div class="module-top">
+              <span class="module-index">04</span>
+              <span class="module-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            </div>
+            <span class="module-kicker">Доступность</span>
+            <h3>Работает в России. Без VPN и сюрпризов</h3>
+            <p>Стабильный доступ, оплата российской картой, понятные лимиты. Никаких зарубежных аккаунтов, которые могут исчезнуть в самый неподходящий момент.</p>
+            <p class="module-benefit"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Один раз настроили — и работаете.</p>
+          </article>
+        </div>
+
+        <p class="subject-note">Подходит для математики, языков, информатики, физики и химии — и любого предмета, где важны точность и структура.</p>
+      </div>
+    </section>
+
+    <section class="section theme-paper is-deep" id="formats" aria-labelledby="formats-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Форматы</span>
+          <h2 id="formats-title">Из одной подготовки — два готовых урока</h2>
+          <p class="section-sub">Печатный лист для занятия и интерактивный тест для дома. Не нужно собирать всё заново — Acade AI отдаёт оба формата.</p>
+        </div>
+
+        <div class="format-grid">
+          <article class="format-card">
+            <div class="format-top">
+              <span class="format-badge warm"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-doc"/></svg> PDF · A4 · готов к печати</span>
+            </div>
+            <h3>Печатный рабочий лист</h3>
+            <div class="format-visual format-visual-pdf" aria-hidden="true">
+              <div class="ws">
+                <div class="ws-head"><span>Acade AI · рабочая среда</span><span>Алгебра · 8 класс</span></div>
+                <h4>Квадратные уравнения</h4>
+                <div class="ws-meta"><span>Вариант 1</span><span>45 минут</span><span>10 заданий</span></div>
+                <ol class="ws-tasks">
+                  <li>
+                    <p>Решите уравнение:</p>
+                    <span class="ws-math">x² − 5x + 6 = 0</span>
+                    <span class="ws-answer"></span>
+                  </li>
+                  <li>
+                    <p>Найдите сумму корней:</p>
+                    <span class="ws-math">2x² + 7x − 4 = 0</span>
+                    <span class="ws-answer"></span>
+                  </li>
+                </ol>
+                <div class="ws-foot"><span>Имя: ________________</span><span>Дата: __________</span></div>
+              </div>
+            </div>
+            <p class="format-caption"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Ровные поля, корректные формулы, ничего не съезжает при печати.</p>
+          </article>
+
+          <article class="format-card">
+            <div class="format-top">
+              <span class="format-badge"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-bolt"/></svg> HTML · проверяется автоматически</span>
+            </div>
+            <h3>Интерактивный тест</h3>
+            <div class="format-visual format-visual-html" aria-hidden="true">
+              <div class="quiz">
+                <div class="quiz-top">
+                  <span class="quiz-tag">Тест · 10 вопросов</span>
+                  <span class="quiz-progress">3 / 10</span>
+                </div>
+                <div class="quiz-bar"><i style="width:40%"></i></div>
+                <p class="quiz-q">Чему равна сумма корней уравнения x² − 5x + 6 = 0?</p>
+                <div class="quiz-opts">
+                  <span class="opt">5</span>
+                  <span class="opt">−5</span>
+                  <span class="opt is-correct">6 <svg class="icon icon-xs" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  <span class="opt">1</span>
+                </div>
+                <div class="quiz-foot">
+                  <span class="quiz-ok"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-check"/></svg> Ответ принят</span>
+                  <span class="quiz-next">Далее</span>
+                </div>
+              </div>
+            </div>
+            <p class="format-caption"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Ученик проходит по ссылке — вы сразу видите результат по заданиям.</p>
+          </article>
+        </div>
+
+        <div class="format-cta">
+          <a class="btn btn-primary" href="#cta">Собрать свой урок <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
       </div>
     </section>
 
-    <!-- HOW IT WORKS (временно скрыто)
-    <section class="section" id="how">
+    <section class="section how-section" id="how" aria-labelledby="how-title">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Как навести порядок</span>
-          <h2>От хаоса к порядку — за один день</h2>
+          <span class="kicker">Как это работает</span>
+          <h2 id="how-title">Три шага. Без инструкций и настройки на вечер.</h2>
+          <p class="section-sub">Вы задаёте цель — Acade AI собирает материал. Всё остальное остаётся вашей методикой.</p>
         </div>
+
         <ol class="steps">
-          <li><span class="step-num">1</span><h3>Регистрация</h3><p>Создаёте аккаунт и выбираете тариф. Бесплатный «Старт» доступен сразу.</p></li>
-          <li><span class="step-num">2</span><h3>Перенос</h3><p>Поможем перенести учеников и материалы с другой платформы.</p></li>
-          <li><span class="step-num">3</span><h3>Наполнение</h3><p>Загружаем учеников, расписание и материалы. Помогаем с переездом с других платформ.</p></li>
-          <li><span class="step-num">4</span><h3>Работа</h3><p>Вы ведёте уроки, а платформа сама напоминает, проверяет, считает и напоминает об оплате.</p></li>
+          <li class="step">
+            <span class="step-num">01</span>
+            <span class="step-time">≈ 2 мин</span>
+            <h3>Загрузите материал</h3>
+            <p>Конспект, страницу учебника, фото задачи или собственный текст. Acade AI разберётся в теме и уровне.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <span class="step-time">≈ 1 мин</span>
+            <h3>Укажите цель</h3>
+            <p>Класс, тема, уровень, время урока и формат: рабочий лист, тест или разбор. Одна короткая форма вместо длинного промпта.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <span class="step-time">≈ 5–9 мин</span>
+            <h3>Заберите готовые материалы</h3>
+            <p>PDF, презентации и интерактивные тесты. Печатайте или отправляйте ученику и просто проводите занятие.</p>
+          </li>
         </ol>
+
+        <div class="how-note">
+          <svg class="icon icon-sm" aria-hidden="true"><use href="#i-clock"/></svg>
+          Обычно подготовка занимает 8–12 минут. Всё, что остаётся, — ваша методика и объяснение.
+        </div>
       </div>
     </section>
-    -->
 
-    <!-- FEATURES -->
-    <section class="section section-muted" id="features">
+    <section class="section theme-paper" id="reviews" aria-labelledby="reviews-title">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">Возможности</span>
-          <h2>Всё для репетитора по информатике — в одном месте</h2>
-          <p class="section-sub">Банк заданий, проверка решений, расписание и оплаты — без хаоса в приложениях.</p>
+          <span class="kicker">Ранний доступ</span>
+          <h2 id="reviews-title">Репетиторы уже готовят уроки иначе</h2>
         </div>
-        <div class="cards-3">
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></div>
-            <h3>Банк заданий ЕГЭ и ОГЭ по информатике</h3>
-            <p>Задачи по всем номерам ЕГЭ (1–27) и ОГЭ с ответами. Берёте готовые — не нужно собирать контент ночами.</p>
+
+        <div class="quotes-grid">
+          <article class="quote">
+            <p>«Раньше на рабочий лист по алгебре уходил вечер. Теперь — 15 минут, и формулы не приходится перепроверять по три раза. Ученик получает аккуратный PDF, а не мой черновик».</p>
+            <div class="quote-author">
+              <div><b>Анна К.</b><span>Математика · 9 лет практики</span></div>
+            </div>
           </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></div>
-            <h3>Проверка решений</h3>
-            <p>Короткие ответы проверяются автоматически, развёрнутые вы отмечаете «верно/неверно». Ученик видит результат под задачей.</p>
+
+          <article class="quote is-featured">
+            <p>«Делаю интерактивные тесты на лексику за пару минут. Ученики проходят по ссылке, я вижу результат — ручная проверка просто ушла из моей недели».</p>
+            <div class="quote-author">
+              <div><b>Марина С.</b><span>Английский · подготовка к экзаменам</span></div>
+            </div>
           </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-layers"/></svg></div>
-            <h3>Конструктор вариантов</h3>
-            <p>Соберите вариант из задач нужных номеров и назначьте ученикам с дедлайном — вручную или из готовых наборов.</p>
-          </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></div>
-            <h3>Расписание со ссылками</h3>
-            <p>К каждому уроку привязана ссылка — Zoom, Meet или любой другой сервис, — а домашки лежат строго под заданиями.</p>
-          </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></div>
-            <h3>Умные напоминания</h3>
-            <p>Ученикам автоматически приходят уведомления о домашках и об уроках — за 24 часа и за час до начала.</p>
-          </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg></div>
-            <h3>Оплаты под контролем</h3>
-            <p>Напоминания с учётом пост- и предоплаты. Ученик прикрепляет скриншот, вы отмечаете «оплатил» — чек уходит автоматически, всё видно в «Мой налог».</p>
-          </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></div>
-            <h3>Статистика для родителей</h3>
-            <p>Рост баллов и счётчики решённых задач по номерам. Показываете родителям на пробном уроке — и цену проще обосновать.</p>
-          </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg></div>
-            <h3>Свои задачи в общем банке</h3>
-            <p>Добавляете свою задачу одним нажатием. После проверки она попадает в общий банк с отметкой «Проверено экспертом».</p>
-          </article>
-          <article class="card feature">
-            <div class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></div>
-            <h3>Умная ссылка-визитка</h3>
-            <p>Одна ссылка, которая презентует вас как репетитора по информатике и ведёт новых учеников прямо в кабинет.</p>
+
+          <article class="quote">
+            <p>«Перестал собирать разборы вручную. Загружаю условие — получаю аккуратный лист, который не стыдно отдать ученику. Это ровно то, чего не хватало».</p>
+            <div class="quote-author">
+              <div><b>Дмитрий П.</b><span>Информатика · ЕГЭ и ОГЭ</span></div>
+            </div>
           </article>
         </div>
+        <p class="quotes-note">Отзывы участников закрытого раннего доступа. Имена сокращены по просьбе репетиторов.</p>
       </div>
     </section>
 
-    <!-- WHITE LABEL (скрыто)
-    <section class="section" id="white-label">
-      <div class="container split">
-        <div class="split-copy">
-          <span class="kicker">Продажа статуса</span>
-          <h2>Родители видят только ваш бренд</h2>
-          <p>Ваш личный поддомен, логотип и цвета интерфейса. Ни одна страница не выдаёт, что за ней стоит сторонний сервис — родитель видит только <b>ваш</b> бренд.</p>
-          <ul class="check-list">
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Поддомен третьего уровня за 5 минут</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Ваше фото, логотип и фирменные цвета</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Свой домен на тарифе «Профессионал»</li>
-          </ul>
-        </div>
-        <div class="split-visual">
-          <div class="domain-card">
-            <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
-            <div>
-              <span class="domain-label">Поддомен · тариф «Преподаватель»</span>
-              <b>petrov<span class="dim">.acade-platform.ru</span></b>
-            </div>
-          </div>
-          <div class="domain-card is-own">
-            <svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>
-            <div>
-              <span class="domain-label">Свой домен · тариф «Профессионал»</span>
-              <b>petrov-education<span class="dim">.com</span></b>
-            </div>
-          </div>
-          <div class="swatches" role="group" aria-label="Выбор фирменной темы">
-            <button class="swatch is-selected" type="button" aria-pressed="true" aria-label="Тема: синяя" style="--c:#2f6bf0" data-theme="blue"></button>
-            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: графит" style="--c:#141a24" data-theme="graphite"></button>
-            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: изумрудная" style="--c:#10b981" data-theme="emerald"></button>
-            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: фиолетовая" style="--c:#7c5cff" data-theme="violet"></button>
-            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: розовая" style="--c:#f43f5e" data-theme="rose"></button>
-            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: янтарная" style="--c:#d97706" data-theme="amber"></button>
-            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: бирюзовая" style="--c:#06b6d4" data-theme="cyan"></button>
-            <button class="swatch" type="button" aria-pressed="false" aria-label="Тема: индиго" style="--c:#4f46e5" data-theme="indigo"></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    -->
-
-    <!-- LOSSES -->
-    <section class="section" id="losses">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Цена хаоса</span>
-          <h2>Куда утекают деньги без порядка</h2>
-          <p class="section-sub">Пример для репетитора по информатике с 8 учениками, 2 занятиями в неделю и ставкой 2 000 ₽ за час.</p>
-        </div>
-
-        <div class="loss-layout">
-          <div class="loss-list">
-            <div class="loss-item">
-              <div class="loss-icon"><svg class="icon" aria-hidden="true"><use href="#i-wand"/></svg></div>
-              <div class="loss-body">
-                <h3>Время на рутину вместо уроков</h3>
-                <p>Расписание, проверка решений, переписка и оплаты — 2 часа в неделю по вашей же ставке.</p>
-              </div>
-              <span class="loss-value">≈ 17 200 ₽</span>
-            </div>
-            <div class="loss-item">
-              <div class="loss-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></div>
-              <div class="loss-body">
-                <h3>Несгоревшие и пропущенные уроки</h3>
-                <p>Без напоминаний ученики забывают: 3 урока в месяц не отрабатываются и не переносятся.</p>
-              </div>
-              <span class="loss-value">≈ 6 000 ₽</span>
-            </div>
-            <div class="loss-item">
-              <div class="loss-icon"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg></div>
-              <div class="loss-body">
-                <h3>Забытые и зависшие оплаты</h3>
-                <p>Ручной учёт: около часа в неделю уходит на напоминания об оплате.</p>
-              </div>
-              <span class="loss-value">≈ 8 600 ₽</span>
-            </div>
-          </div>
-
-          <div class="loss-total">
-            <span class="loss-result-label">Потери — около</span>
-            <div class="loss-big">31 800 ₽<span class="loss-unit"> / мес</span></div>
-            <div class="loss-year">≈ 381 600 ₽ в год</div>
-            <p class="loss-compare">Из них <b>206 400 ₽</b> — это ваше время: потраченное на рутину. Платформа стоит <b>от 899 ₽/мес</b> — <b>меньше 3%</b> от ежемесячных потерь.</p>
-            <a class="btn btn-primary btn-block" href="#cta">Вернуть эти деньги</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ANALYTICS -->
-    <section class="section section-muted" id="analytics">
-      <div class="container split reverse">
-        <div class="split-copy">
-          <span class="kicker">Инструмент для пробных уроков</span>
-          <h2>Обоснуйте высокий чек цифрами</h2>
-          <p>Карточка репетитора с наглядными цифрами: рост баллов, счётчики решённых задач и подтверждённый статус. Откройте этот экран на вводном уроке — и родителю нечего будет возразить.</p>
-          <ul class="check-list">
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Рост баллов в динамике</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Счётчики решённых задач и занятий</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Понятная родителю статистика</li>
-          </ul>
-        </div>
-        <div class="split-visual">
-          <div class="tutor-card">
-            <div class="tutor-head">
-              <div class="tutor-avatar" aria-hidden="true">ИП</div>
-              <div class="tutor-id">
-                <b>Иван Петров</b>
-                <span>Репетитор по информатике · ЕГЭ и ОГЭ</span>
-              </div>
-              <span class="tutor-verified"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg> Проверен</span>
-            </div>
-
-            <div class="tutor-stats">
-              <div><b data-count="18">18</b><span>учеников</span></div>
-              <div><b data-count="420">420</b><span>занятий</span></div>
-              <div><b data-count="96" data-suffix="%">96%</b><span>довольны</span></div>
-            </div>
-
-            <div class="tutor-rows">
-              <div class="tutor-row"><span>Средний балл ЕГЭ</span><b>84</b></div>
-              <div class="tutor-row"><span>Средний рост за 3 месяца</span><b>+34 балла</b></div>
-              <div class="tutor-row"><span>Задач решено учениками</span><b>1 120</b></div>
-              <div class="tutor-row"><span>Опыт преподавания</span><b>8 лет</b></div>
-            </div>
-
-            <a class="btn btn-primary btn-block" href="#cta">Записаться на пробный урок</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- UGC -->
-    <section class="section" id="ugc">
-      <div class="container split">
-        <div class="split-copy">
-          <span class="kicker">Свои задачи</span>
-          <h2>Ваше авторство — в общем банке задач</h2>
-          <p>Придумали свою задачу? Отправьте её на проверку одной кнопкой. После одобрения она попадает в общий банк с отметкой авторства — вам будет чем гордиться, а банк растёт вместе с вами.</p>
-        </div>
-        <div class="split-visual">
-          <div class="badge-card">
-            <div class="badge-ribbon"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg></div>
-            <b>Задача опубликована экспертом Иваном Петровым</b>
-            <p>Ваше имя рядом с задачей, которую решают сотни учеников платформы.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PAYMENTS -->
-    <section class="section section-muted" id="payments">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Порядок в оплатах</span>
-          <h2>Напоминания, чеки и «Мой налог» — автоматически</h2>
-        </div>
-        <div class="flow">
-          <div class="flow-step"><span class="flow-num">1</span><h3>Напоминание</h3><p>Платформа напоминает ученику об оплате с учётом постоплаты или предоплаты.</p></div>
-          <div class="flow-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
-          <div class="flow-step"><span class="flow-num">2</span><h3>Скриншот</h3><p>Ученик прикрепляет подтверждение перевода прямо в платформе.</p></div>
-          <div class="flow-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
-          <div class="flow-step"><span class="flow-num">3</span><h3>«Оплатил»</h3><p>Вы сверили перевод в банке и отметили оплату в один клик.</p></div>
-          <div class="flow-arrow" aria-hidden="true"><svg class="icon"><use href="#i-arrow"/></svg></div>
-          <div class="flow-step"><span class="flow-num">4</span><h3>Чек и налог</h3><p>Чек уходит ученику автоматически, а сумма отмечается в «Мой налог».</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="section" id="pricing">
+    <section class="section pricing-section" id="pricing" aria-labelledby="pricing-title">
       <div class="container">
         <div class="section-head">
           <span class="kicker">Тарифы</span>
-          <h2>Прозрачная подписка. Начните бесплатно</h2>
-          <p class="section-sub">Оплата ежемесячно. Начните бесплатно и переходите на платный тариф по мере роста.</p>
+          <h2 id="pricing-title">Дешевле одного часа ваших правок</h2>
+          <p class="section-sub">Один час репетитора стоит 1 500–3 000 ₽. Подписка стоит меньше одного часа — и возвращает десятки часов каждый месяц.</p>
         </div>
-        <div class="pricing">
-          <article class="price-card">
-            <h3>Старт</h3>
-            <div class="price"><span class="amount">0 ₽</span><span class="period">навсегда</span></div>
-            <p class="price-desc">Чтобы попробовать платформу и первых учеников.</p>
-            <ul class="price-features">
-              <li>До 2 учеников</li>
-              <li>Банк заданий ЕГЭ и ОГЭ по информатике</li>
-              <li>Расписание, домашки и напоминания</li>
-            </ul>
-            <a class="btn btn-outline btn-block" href="#cta">Начать бесплатно</a>
-          </article>
 
+        <div class="pricing-grid">
           <article class="price-card">
-            <h3>Репетитор</h3>
-            <div class="price"><span class="amount">899 ₽</span><span class="period">/ мес</span></div>
-            <p class="price-desc">Частным репетиторам по информатике.</p>
-            <ul class="price-features">
-              <li>До 8 учеников</li>
-              <li>Всё из тарифа «Старт»</li>
-              <li>Полный конструктор вариантов</li>
-              <li>Статистика для родителей</li>
+            <h3 class="plan-name">Проба</h3>
+            <div class="plan-price"><span class="amount">0 ₽</span><span class="period">/ 5 генераций</span></div>
+            <p class="plan-for">Чтобы проверить точность и формат на своём предмете.</p>
+            <ul class="plan-features">
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> 5 полноценных генераций материалов</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Все предметы</li>
             </ul>
-            <a class="btn btn-outline btn-block" href="#cta">Выбрать тариф</a>
+            <a class="btn btn-secondary btn-block" href="#cta">Начать бесплатно</a>
           </article>
 
           <article class="price-card featured">
-            <span class="badge-popular">Популярный</span>
-            <h3>Преподаватель</h3>
-            <div class="price"><span class="amount">2 499 ₽</span><span class="period">/ мес</span></div>
-            <p class="price-desc">Опытным репетиторам с плотным графиком и мини-группами.</p>
-            <ul class="price-features">
-              <li>Без ограничений по ученикам</li>
-              <li>Всё из тарифа «Репетитор»</li>
-              <li>Работа с группами</li>
-              <li>Помощь с переездом</li>
+            <span class="badge-popular">Выбор репетиторов</span>
+            <h3 class="plan-name">Репетитор</h3>
+            <div class="plan-price"><span class="amount">790 ₽</span><span class="period">/ мес</span></div>
+            <span class="plan-per">≈ 10 ₽ за материалы к одному занятию</span>
+            <p class="plan-for">Для регулярной подготовки к урокам и домашкам.</p>
+            <ul class="plan-features">
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Безлимитные генерации в месяц</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> PDF, презентации, интерактивные тесты</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Методист и проверка формул</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Все предметы и классы</li>
+              <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Поддержка в чате</li>
             </ul>
-            <a class="btn btn-primary btn-block" href="#cta">Выбрать тариф</a>
+            <a class="btn btn-primary btn-block" href="#cta">Выбрать «Репетитор»</a>
           </article>
+        </div>
 
-          <!-- Тариф Профессионал (скрыто)
-          <article class="price-card">
-            <h3>Профессионал</h3>
-            <div class="price"><span class="amount">3 999 ₽</span><span class="period">/ мес</span></div>
-            <p class="price-desc">Топовым репетиторам, авторам курсов и небольшим командам.</p>
-            <ul class="price-features">
-              <li>Без лимита по ученикам</li>
-              <li>Свой собственный домен</li>
-              <li>Всё из тарифа «Преподаватель»</li>
-            </ul>
-            <a class="btn btn-outline btn-block" href="#cta">Выбрать тариф</a>
-          </article>
-          -->
+        <p class="pricing-note">Отмена подписки в один клик, без скрытых списаний.</p>
+
+        <div class="value-strip">
+          <div class="value-strip-head">
+            <h3>Считаем честно</h3>
+            <p>Час репетитора — 1 500–3 000 ₽. Одного сэкономленного часа в месяц уже достаточно, чтобы подписка окупилась.</p>
+          </div>
+          <div class="value-grid">
+            <div class="value-item">
+              <span class="value-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div><h4>1 час правок</h4><p>Это 1 500–3 000 ₽ вашего времени на подготовке к урокам. В месяц можно потерять на этом несколько суток.</p></div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+              <div><h4>Без VPN и чужих карт</h4><p>Не зависите от лимитов и блокировок в день урока.</p></div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg></span>
+              <div><h4>790 ₽ в месяц</h4><p>Это 15–30 минут вашей работы. Аcade экономит десятки часов в месяц.</p></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- REVIEWS -->
-    <section class="section section-muted" id="reviews">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Отзывы</span>
-          <h2>Что говорят репетиторы по информатике</h2>
-        </div>
-        <div class="reviews-grid">
-          <article class="card review-card">
-            <div class="review-stars" aria-label="Оценка 5 из 5">
-              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
-            </div>
-            <p class="review-text">Раньше держал задачи и разборы в мессенджерах. Теперь домашки лежат под заданиями, короткие ответы проверяются сами, а родители видят динамику.</p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">АМ</div>
-              <div>
-                <div class="review-name">Алексей Морозов</div>
-                <div class="review-role">Информатика · ЕГЭ</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="card review-card">
-            <div class="review-stars" aria-label="Оценка 5 из 5">
-              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
-            </div>
-            <p class="review-text">Банк заданий по информатике закрыл главную боль — не собираю задачи по номерам вручную. Беру готовые ЕГЭ и ОГЭ, а свои добавляю на проверку.</p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">ДК</div>
-              <div>
-                <div class="review-name">Дмитрий Кузнецов</div>
-                <div class="review-role">Информатика · ОГЭ и ЕГЭ</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="card review-card">
-            <div class="review-stars" aria-label="Оценка 5 из 5">
-              <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
-            </div>
-            <p class="review-text">Напоминания об оплате и авто-чеки убрали всю возню со скриншотами. Плюс «Мой налог» под рукой — бухгалтерия больше не отнимает вечера.</p>
-            <div class="review-author">
-              <div class="review-avatar" aria-hidden="true">МТ</div>
-              <div>
-                <div class="review-name">Марина Титова</div>
-                <div class="review-role">Информатика и ИКТ · ЕГЭ</div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="reviews-more">
-          <a class="btn btn-outline" href="reviews.html">Все отзывы <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-muted" id="faq">
+    <section class="section theme-paper" id="faq" aria-labelledby="faq-title">
       <div class="container narrow">
         <div class="section-head">
-          <span class="kicker">Вопросы и ответы</span>
-          <h2>Коротко о главном</h2>
+          <span class="kicker">Вопросы</span>
+          <h2 id="faq-title">Спрашивают перед первым уроком</h2>
         </div>
-        <div class="faq" id="faqList">
-          <!-- Настройка (скрыто)
+
+        <div class="faq">
           <details open>
-            <summary>Нужно ли что-то настраивать самому?</summary>
-            <p>Нет. Всё делает менеджер: заводит поддомен, загружает логотип и фото, подбирает цвета и помогает с переездом.</p>
-          </details>
-          -->
-          <details open>
-            <summary>Есть ли банк заданий ЕГЭ и ОГЭ по информатике?</summary>
-            <p>Да. В платформе есть задачи по всем номерам ЕГЭ (1–27) и ОГЭ с ответами — берите готовые и назначайте. Свои задачи можно добавить на проверку.</p>
+            <summary>У меня уже есть ChatGPT. Зачем мне Acade AI?</summary>
+            <p>ChatGPT — универсальный инструмент на все случаи. Acade AI — среда подготовки: собирает урок по параметрам, сверяет формулы, верстает PDF и делает интерактивный тест. ChatGPT поможет найти идею. Acade AI отдаёт готовый материал.</p>
           </details>
           <details>
-            <summary>Как проверяются решения?</summary>
-            <p>Короткие ответы проверяются автоматически, развёрнутые вы отмечаете «верно/неверно». Ученик видит результат по каждому заданию.</p>
+            <summary>Насколько точны формулы и задания?</summary>
+            <p>Формулы и структура проходят методическую проверку внутри платформы, задания собираются под каждого ученика. Финальное слово остаётся за вами: Acade AI убирает рутину, а не заменяет экспертизу преподавателя.</p>
           </details>
           <details>
-            <summary>Что входит в бесплатный тариф?</summary>
-            <p>До 2 учеников, банк заданий по информатике, автопроверка ответов и расписание. Этого достаточно, чтобы протестировать платформу без риска.</p>
+            <summary>Это точно работает в России без VPN?</summary>
+            <p>Да. Платформа доступна без VPN, оплата проходит российской картой. Никаких зарубежных аккаунтов и скрытых лимитов.</p>
           </details>
           <details>
-            <summary>Как перейти с другой платформы?</summary>
-            <p>На тарифе «Преподаватель» поможем с переездом: перенесём учеников, расписание и материалы. Заводить всё заново не придётся.</p>
+            <summary>Что происходит с моими материалами?</summary>
+            <p>Ваши материалы используются только для подготовки ваших уроков. Мы не обучаем модели на ваших файлах без разрешения. Данные передаются по защищённому соединению, доступ есть только у вас.</p>
           </details>
           <details>
-            <summary>Как работают оплаты и чеки?</summary>
-            <p>Платформа напоминает ученику об оплате, принимает скриншот, а после вашего подтверждения автоматически отправляет чек. Суммы отмечаются в «Мой налог».</p>
+            <summary>Сколько времени это реально экономит?</summary>
+            <p>Рабочий лист или тест обычно собирается за 8–12 минут вместо 1,5–2 часов ручной работы. На бесплатном тарифе это можно проверить — без привязки карты.</p>
           </details>
-          <!-- White Label (скрыто)
-          <details>
-            <summary>Увидит ли ученик, что вы используете стороннюю платформу?</summary>
-            <p>Нет. Ученик и родитель работают на вашем поддомене и видят только ваш бренд и ваши цвета.</p>
-          </details>
-          -->
         </div>
+
+        <p class="faq-more">Остались сомнения? <a href="#cta">Задайте вопрос и попробуйте на своём уроке</a>.</p>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="section cta" id="cta">
-      <div class="container cta-inner">
+    <section class="section cta-section" id="cta" aria-labelledby="cta-title">
+      <div class="container cta-grid">
         <div class="cta-copy">
-          <h2>Готовьте к ЕГЭ и ОГЭ по информатике без хаоса</h2>
-          <p>Оставьте заявку — начнём бесплатно и поможем с переездом на тарифе «Преподаватель».</p>
-          <ul class="check-list">
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Бесплатный тариф навсегда</li>
-            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Помощь с переездом на «Преподавателе»</li>
+          <span class="kicker">Первый урок — бесплатно</span>
+          <h2 id="cta-title">Соберите урок, который не стыдно показать</h2>
+          <p>Оставьте контакт — откроем доступ и поможем собрать первый материал под ваш предмет.</p>
+          <ul class="cta-list">
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Бесплатно</li>
+            <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Без карты и обязательств</li>
             <li><svg class="icon icon-sm" aria-hidden="true"><use href="#i-check"/></svg> Ответим в течение рабочего дня</li>
           </ul>
         </div>
 
-        <form class="cta-form" id="leadForm" novalidate>
-          <div class="field">
-            <label for="name">Ваше имя</label>
-            <input id="name" name="name" type="text" placeholder="Иван Петров" autocomplete="name" required />
+        <form class="lead-form" id="leadForm" novalidate>
+          <div class="form-fields">
+            <div class="field">
+              <label for="lead-name">Как вас зовут</label>
+              <input id="lead-name" name="name" type="text" placeholder="Анна" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="lead-contact">E-mail или телефон</label>
+              <input id="lead-contact" name="contact" type="text" placeholder="anna@example.ru" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="lead-subject">Ваш предмет</label>
+              <select id="lead-subject" name="subject">
+                <option value="math">Математика</option>
+                <option value="languages">Языки</option>
+                <option value="cs">Информатика</option>
+                <option value="physics">Физика</option>
+                <option value="chemistry">Химия</option>
+                <option value="other">Другой предмет</option>
+              </select>
+            </div>
+            <button class="btn btn-primary btn-block btn-lg" type="submit">Получить доступ <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <p class="form-hint" id="formHint" role="status" aria-live="polite">3 урока бесплатно. Без карты. Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
           </div>
-          <div class="field">
-            <label for="contact">Телефон или e-mail</label>
-            <input id="contact" name="contact" type="text" placeholder="+7 900 000-00-00" autocomplete="tel" required />
+          <div class="form-success" role="status" aria-live="polite">
+            <span class="success-icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+            <h3>Заявка принята</h3>
+            <p>Спасибо! Мы свяжемся с вами в течение рабочего дня и откроем доступ к трём урокам.</p>
+            <button class="btn btn-secondary btn-block" type="button" id="formReset">Отправить ещё одну</button>
           </div>
-          <div class="field">
-            <label for="students">Сколько у вас учеников?</label>
-            <select id="students" name="students">
-              <option value="0">Пока нет</option>
-              <option value="1-5">1–5</option>
-              <option value="6-15">6–15</option>
-              <option value="16-30">16–30</option>
-              <option value="30+">Больше 30</option>
-            </select>
-          </div>
-          <button class="btn btn-primary btn-block btn-lg" type="submit">Создать мой кабинет <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
-          <p class="form-hint" id="formHint" role="status" aria-live="polite">Отправляя заявку, вы соглашаетесь на обработку персональных данных.</p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-grid">
       <div class="footer-brand">
-        <a class="logo logo-light" href="#top">
-          <img class="logo-mark" src="logo.png" alt="" aria-hidden="true" />
-          <span class="logo-text">Аcade<span class="logo-sub">Платформа</span></span>
+        <a class="logo" href="#top" aria-label="Acade AI — на главную">
+          <img class="logo-mark" src="logo.png" alt="" width="34" height="34" />
+          <span class="logo-word">Acade<span class="logo-sub">AI-ассистент</span></span>
         </a>
-        <!-- <p>White-Label LMS/CRM для репетиторов: порядок в уроках и оплатах.</p> -->
+        <p>Среда подготовки уроков для репетиторов. Точные формулы, готовый формат и доступ без VPN.</p>
       </div>
       <nav class="footer-nav" aria-label="Разделы">
-        <a href="#order">Порядок</a>
+        <span class="footer-label">Разделы</span>
+        <a href="#pain">Проблема</a>
         <a href="#features">Возможности</a>
-        <!-- <a href="#white-label">White Label</a> -->
+        <a href="#how">Как это работает</a>
         <a href="#pricing">Тарифы</a>
-        <a href="reviews.html">Отзывы</a>
         <a href="#faq">Вопросы</a>
+        <a class="nav-cta" href="#cta">Попробовать бесплатно</a>
       </nav>
       <div class="footer-contact">
-        <span>Свяжитесь с нами</span>
+        <span class="footer-label">Связаться</span>
         <a href="tel:+79936257102">+7 (993) 625-71-02</a>
+        <a href="#cta">Открыть бесплатный доступ</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <span>© <span id="year">2026</span> Аcade Платформа. Все права защищены.</span>
+      <span>© <span id="year">2026</span> Acade AI. Все права защищены.</span>
+      <span>Работает в РФ · Без VPN · Оплата картой РФ</span>
     </div>
   </footer>
 
